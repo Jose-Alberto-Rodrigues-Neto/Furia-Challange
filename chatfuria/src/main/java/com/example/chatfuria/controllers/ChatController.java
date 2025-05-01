@@ -15,4 +15,9 @@ public class ChatController {
     public String ask(@RequestBody String body) throws Exception{
         return ollamaService.askOllama(body);
     }
+
+    @PostMapping("/fallen")
+    public String fallen(@RequestBody String body) throws Exception{
+        return ollamaService.askFallen(body);
+    }
 }
